@@ -1,0 +1,6 @@
+framework module Pods_HelloWorldCuckoo {
+  umbrella header "Pods-HelloWorldCuckoo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,12 @@
+PODS:
+  - Cuckoo (0.7.0)
+
+DEPENDENCIES:
+  - Cuckoo
+
+SPEC CHECKSUMS:
+  Cuckoo: 16b23677db484ec37a3b98deebf11b5f6af40c79
+
+PODFILE CHECKSUM: bbe9b89f6fc33bd1fa7f26e16b59991fdd3ed099
+
+COCOAPODS: 1.0.1

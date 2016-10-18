@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D8CCFDC9C3C8E93CAF0588CE55DC66 /* Matchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C82F564AF1CCE30C349791FDA12ACB1 /* Matchable.swift */; };
+		0D3FABC4185174D718754D55B9310F92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
+		106313971E5F3D18421880AF17BBEE60 /* StubFunctionThenCallRealImplementationTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0AC4EB7E740F34306125B576FD831 /* StubFunctionThenCallRealImplementationTrait.swift */; };
+		11142077AAD79E694451944F357B6C7E /* StubAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6523766DB78E525A5EF249A986F702 /* StubAction.swift */; };
+		1D3235D1348B7C28BE46066BFCBA2AEB /* BaseStubFunctionTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6AB3EC434B9A2837765F2372CA5516 /* BaseStubFunctionTrait.swift */; };
+		1E0536B0DEA1982F80DDF716E000F424 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B89BF7315BAB3516AF2A51041DC39C3B /* XCTest.framework */; };
+		247001AB2C94EC8CDAAEF4E34723618E /* VerificationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F834F869D9A962EAD0CB377F7B255201 /* VerificationProxy.swift */; };
+		279AEC7964BB3E51BFBB08C98D7B1F25 /* StubFunctionThenTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18138F475E685A506D9AE906D9B2D58E /* StubFunctionThenTrait.swift */; };
+		3569A93E5F18D070D4A3085D22067FEC /* Pods-HelloWorldCuckooTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE09889D69282E9BBB7171EB32AD384E /* Pods-HelloWorldCuckooTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E6DCDFA6D6DDF7DFE1F2E5FA8C572F2 /* Cuckoo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEAAB38FB056BDDB485F7819E95D5A7 /* Cuckoo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		404EB4D4128EF9F1DBEDB5BBA23ED7A1 /* Pods-HelloWorldCuckooTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B44DD418355E3674F791A530E5CE2971 /* Pods-HelloWorldCuckooTests-dummy.m */; };
+		4907B0E6D20F987BADACA1EE84692127 /* VerifyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD924518105A8F8226028183AFDD782 /* VerifyProperty.swift */; };
+		4CDC81F9DC8DF100204F9EA36B78BCDF /* StubFunctionThenDoNothingTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52B0274CA27AB91FC62D29C94D4C38 /* StubFunctionThenDoNothingTrait.swift */; };
+		55D8D09650F341467799C7A6AA27F778 /* MockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E9899778681CAAFC531C583DACF5BD /* MockManager.swift */; };
+		58E3B9306241224ECED6C7A22658D48F /* ArgumentCaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F389688A89F3DEAE8965072F977831 /* ArgumentCaptor.swift */; };
+		74C8BD736BEB2526E9FCBD4F00206F98 /* StubFunctionThenThrowTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27505477A8B200C46B654450436103D2 /* StubFunctionThenThrowTrait.swift */; };
+		76FD05E33FFCF6AB0EBAE1AC7C58BD6A /* Cuckoo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8142F1F33FB4E7E14A3A406ED87620F2 /* Cuckoo-dummy.m */; };
+		7E924C9527DFA2DBA6101016A1A21DED /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E63361C2F44651A1F30604D12D4890 /* Utils.swift */; };
+		88658A092629E1C797F2A77E6E519B37 /* ToBeStubbedReadOnlyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D980032E3495E44D9FC4A1C6D3F28B /* ToBeStubbedReadOnlyProperty.swift */; };
+		8F99B9589C34853B2C53FDA2F29A7F84 /* CuckooFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B89CD95BD43483F9928F677A69B99C /* CuckooFunctions.swift */; };
+		9241B80C61A1BDF32B34D5A69E802E37 /* StubCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE342E24F0C3984263536004DA5D0AA2 /* StubCall.swift */; };
+		97D5D35564918A8A143F2290F8A304C2 /* ToBeStubbedProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054560CCCEAE60CF5B3070516CC0900D /* ToBeStubbedProperty.swift */; };
+		9B1CB0772E1F1ED4B933908EB2218530 /* StubNoReturnFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AA006150EE6E8C7A8771CBDBF0B51A /* StubNoReturnFunction.swift */; };
+		9BD3A64C333B4A845985EEB9133C4D88 /* StubThrowingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190B6B3FD5450A63EE98E7FE86801C2 /* StubThrowingFunction.swift */; };
+		9CA407FD2CE82472820387B7DF0C0F6F /* Pods-HelloWorldCuckoo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9145B7FF35D53585287F13621111E4F9 /* Pods-HelloWorldCuckoo-dummy.m */; };
+		9FBC0001CBEF89ADC56E1BE91D82E030 /* CallMatcherFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A739C50817476656D44078A6FF70FAE /* CallMatcherFunctions.swift */; };
+		A97A6A4C71FCB1855E49A70527290859 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8099251C1F1D0612E64BEFB866F0F488 /* Stub.swift */; };
+		AB2CA8827E73763C1D8BEFB7D481F866 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
+		B67E1C26E6509645ADDD220AF99B6AAA /* Pods-HelloWorldCuckoo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B91465B86119C5952B5C8BED22EC2E6 /* Pods-HelloWorldCuckoo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C58A473CE5F280DEBB10D2AC966385F3 /* ParameterMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD262FCB4E5F33CC5BCF9C184C6538AC /* ParameterMatcher.swift */; };
+		C5F2AA100147D94EC2404484AE4B6FCF /* ParameterMatcherFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6625E0E80C2720ED5488A898218F73C1 /* ParameterMatcherFunctions.swift */; };
+		D29A031F514696C74AA8BABF000B289F /* StubFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7078345523E2898A57934E1CA817A8E7 /* StubFunction.swift */; };
+		D9DD437B6B11E9F17779B0B14EC88383 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */; };
+		E4C8B0A1C99319190481A24CB69F9FB2 /* __DoNotUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D06345ACD123437463D9FEB79720F43 /* __DoNotUse.swift */; };
+		E7AA2D22EBCFD1BF1E2CC5008D23C3A0 /* StubFunctionThenReturnTrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F6B60811C76FFB67E196BB943B7120 /* StubFunctionThenReturnTrait.swift */; };
+		ED4694698E57EC1978E9AD6D6C162E92 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C8BA2086043BCD4ABFDE06EEE0AE79 /* Mock.swift */; };
+		EE8F44682087FFF1C152A57B5BDBA0FB /* StubNoReturnThrowingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818C52B562E936890570C56192442E9F /* StubNoReturnThrowingFunction.swift */; };
+		F8F39A4D177D222D16292314C18DA0A7 /* VerifyReadOnlyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C4D169EBCCA90FF02B3C360C9FB793 /* VerifyReadOnlyProperty.swift */; };
+		FCDBC434C8EDD8320BF5EF933E4C4AAB /* StubbingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2935E1AAB9CDBFE750D11036CB3286 /* StubbingProxy.swift */; };
+		FE9045C9DE52614F567363B0347EE41D /* CallMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9EA755CF7ECA71F00DB6F181258A03 /* CallMatcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		034D45A4E137B78C11BED2860589C112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA8AFC77E5ECA4D9ED2AD8579B24483;
+			remoteInfo = Cuckoo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D487FF14285CE89C500AE545A72063 /* Pods-HelloWorldCuckooTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloWorldCuckooTests-frameworks.sh"; sourceTree = "<group>"; };
+		054560CCCEAE60CF5B3070516CC0900D /* ToBeStubbedProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToBeStubbedProperty.swift; path = Source/Stubbing/ToBeStubbedProperty/ToBeStubbedProperty.swift; sourceTree = "<group>"; };
+		06F389688A89F3DEAE8965072F977831 /* ArgumentCaptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentCaptor.swift; path = Source/Verification/ArgumentCaptor.swift; sourceTree = "<group>"; };
+		075BFA75D67F731AEBF7FCD2B584915C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D0AC4EB7E740F34306125B576FD831 /* StubFunctionThenCallRealImplementationTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenCallRealImplementationTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenCallRealImplementationTrait.swift; sourceTree = "<group>"; };
+		18138F475E685A506D9AE906D9B2D58E /* StubFunctionThenTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenTrait.swift; sourceTree = "<group>"; };
+		18C8BA2086043BCD4ABFDE06EEE0AE79 /* Mock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mock.swift; path = Source/Mock/Mock.swift; sourceTree = "<group>"; };
+		20A98E6FBE33630FF08944840D28A699 /* Pods-HelloWorldCuckoo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloWorldCuckoo-frameworks.sh"; sourceTree = "<group>"; };
+		27505477A8B200C46B654450436103D2 /* StubFunctionThenThrowTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenThrowTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenThrowTrait.swift; sourceTree = "<group>"; };
+		2CCC1C25CFE73CC4C3E0DA720AA92BF1 /* Pods-HelloWorldCuckoo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelloWorldCuckoo-acknowledgements.plist"; sourceTree = "<group>"; };
+		3190B6B3FD5450A63EE98E7FE86801C2 /* StubThrowingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubThrowingFunction.swift; path = Source/Stubbing/StubFunction/StubThrowingFunction.swift; sourceTree = "<group>"; };
+		3B91465B86119C5952B5C8BED22EC2E6 /* Pods-HelloWorldCuckoo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelloWorldCuckoo-umbrella.h"; sourceTree = "<group>"; };
+		3C82F564AF1CCE30C349791FDA12ACB1 /* Matchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Matchable.swift; path = Source/Matching/Matchable.swift; sourceTree = "<group>"; };
+		3D06345ACD123437463D9FEB79720F43 /* __DoNotUse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = __DoNotUse.swift; path = Source/Verification/__DoNotUse.swift; sourceTree = "<group>"; };
+		46D1520DA38D588B12994B61513523F9 /* Cuckoo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cuckoo-prefix.pch"; sourceTree = "<group>"; };
+		4CEAAB38FB056BDDB485F7819E95D5A7 /* Cuckoo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cuckoo-umbrella.h"; sourceTree = "<group>"; };
+		4DAF8DE4D447EA7AEF6E0D7A14341E22 /* Pods-HelloWorldCuckooTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloWorldCuckooTests-resources.sh"; sourceTree = "<group>"; };
+		4F9EA755CF7ECA71F00DB6F181258A03 /* CallMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallMatcher.swift; path = Source/Matching/CallMatcher.swift; sourceTree = "<group>"; };
+		52DE3591F82B4B5C71E92EC91F044F79 /* Pods-HelloWorldCuckooTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HelloWorldCuckooTests.modulemap"; sourceTree = "<group>"; };
+		54D37ADD47E25800DDD7F387F66F4D1A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59F6B60811C76FFB67E196BB943B7120 /* StubFunctionThenReturnTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenReturnTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenReturnTrait.swift; sourceTree = "<group>"; };
+		6625E0E80C2720ED5488A898218F73C1 /* ParameterMatcherFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterMatcherFunctions.swift; path = Source/Matching/ParameterMatcherFunctions.swift; sourceTree = "<group>"; };
+		7078345523E2898A57934E1CA817A8E7 /* StubFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunction.swift; path = Source/Stubbing/StubFunction/StubFunction.swift; sourceTree = "<group>"; };
+		7CD924518105A8F8226028183AFDD782 /* VerifyProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifyProperty.swift; path = Source/Verification/VerifyProperty/VerifyProperty.swift; sourceTree = "<group>"; };
+		7D9BFDB7615481C1E963A616BD4B9599 /* Pods-HelloWorldCuckoo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloWorldCuckoo.debug.xcconfig"; sourceTree = "<group>"; };
+		7F8F61AFFBA91F08A2400E2FC34FD3AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8099251C1F1D0612E64BEFB866F0F488 /* Stub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stub.swift; path = Source/Stubbing/Stub.swift; sourceTree = "<group>"; };
+		8142F1F33FB4E7E14A3A406ED87620F2 /* Cuckoo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cuckoo-dummy.m"; sourceTree = "<group>"; };
+		818C52B562E936890570C56192442E9F /* StubNoReturnThrowingFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubNoReturnThrowingFunction.swift; path = Source/Stubbing/StubFunction/StubNoReturnThrowingFunction.swift; sourceTree = "<group>"; };
+		81E9899778681CAAFC531C583DACF5BD /* MockManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockManager.swift; path = Source/MockManager.swift; sourceTree = "<group>"; };
+		90DA94C4ACE652C128D93BB51962907F /* Pods-HelloWorldCuckooTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloWorldCuckooTests.release.xcconfig"; sourceTree = "<group>"; };
+		9145B7FF35D53585287F13621111E4F9 /* Pods-HelloWorldCuckoo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelloWorldCuckoo-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9587278FF58DB3104FBF3F3F872D04B6 /* Pods-HelloWorldCuckoo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HelloWorldCuckoo.modulemap"; sourceTree = "<group>"; };
+		9A739C50817476656D44078A6FF70FAE /* CallMatcherFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallMatcherFunctions.swift; path = Source/Matching/CallMatcherFunctions.swift; sourceTree = "<group>"; };
+		9DBD8FE218E5663CF3BAC27828C0EF9A /* Pods_HelloWorldCuckooTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldCuckooTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AE09889D69282E9BBB7171EB32AD384E /* Pods-HelloWorldCuckooTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HelloWorldCuckooTests-umbrella.h"; sourceTree = "<group>"; };
+		AE2935E1AAB9CDBFE750D11036CB3286 /* StubbingProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubbingProxy.swift; path = Source/Mock/StubbingProxy.swift; sourceTree = "<group>"; };
+		B44DD418355E3674F791A530E5CE2971 /* Pods-HelloWorldCuckooTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HelloWorldCuckooTests-dummy.m"; sourceTree = "<group>"; };
+		B89BF7315BAB3516AF2A51041DC39C3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B911182DBD0481F3F43B92E235976DED /* Cuckoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cuckoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10BF32BD018C8131C2B9699FDE3291 /* Pods_HelloWorldCuckoo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldCuckoo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD262FCB4E5F33CC5BCF9C184C6538AC /* ParameterMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterMatcher.swift; path = Source/Matching/ParameterMatcher.swift; sourceTree = "<group>"; };
+		C0AA006150EE6E8C7A8771CBDBF0B51A /* StubNoReturnFunction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubNoReturnFunction.swift; path = Source/Stubbing/StubFunction/StubNoReturnFunction.swift; sourceTree = "<group>"; };
+		C4D980032E3495E44D9FC4A1C6D3F28B /* ToBeStubbedReadOnlyProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToBeStubbedReadOnlyProperty.swift; path = Source/Stubbing/ToBeStubbedProperty/ToBeStubbedReadOnlyProperty.swift; sourceTree = "<group>"; };
+		C5B89CD95BD43483F9928F677A69B99C /* CuckooFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CuckooFunctions.swift; path = Source/CuckooFunctions.swift; sourceTree = "<group>"; };
+		C6E63361C2F44651A1F30604D12D4890 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Source/Utils.swift; sourceTree = "<group>"; };
+		CAE885C70274E9523CBDAE84564D01B1 /* Cuckoo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cuckoo.xcconfig; sourceTree = "<group>"; };
+		CF6AB3EC434B9A2837765F2372CA5516 /* BaseStubFunctionTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseStubFunctionTrait.swift; path = Source/Stubbing/StubFunction/Trait/BaseStubFunctionTrait.swift; sourceTree = "<group>"; };
+		D54ABF3B3ECD1A006880949EF72FF10E /* Pods-HelloWorldCuckoo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HelloWorldCuckoo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E0C4D169EBCCA90FF02B3C360C9FB793 /* VerifyReadOnlyProperty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerifyReadOnlyProperty.swift; path = Source/Verification/VerifyProperty/VerifyReadOnlyProperty.swift; sourceTree = "<group>"; };
+		E218F3597F6EAC30B77ACE9534F965F9 /* Pods-HelloWorldCuckooTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HelloWorldCuckooTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5783D00FC40AA19CAE32A885DBF7C4F /* Pods-HelloWorldCuckooTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HelloWorldCuckooTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EAA775CCEE348A46B4BCE29989A839A3 /* Pods-HelloWorldCuckooTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloWorldCuckooTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC6523766DB78E525A5EF249A986F702 /* StubAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubAction.swift; path = Source/Stubbing/StubAction.swift; sourceTree = "<group>"; };
+		ED01A301F0FA94027E429509E6BFBEBF /* Cuckoo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Cuckoo.modulemap; sourceTree = "<group>"; };
+		EE52B0274CA27AB91FC62D29C94D4C38 /* StubFunctionThenDoNothingTrait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubFunctionThenDoNothingTrait.swift; path = Source/Stubbing/StubFunction/Trait/StubFunctionThenDoNothingTrait.swift; sourceTree = "<group>"; };
+		F0CBAE2AC4D7625ACE603A0A63BD0890 /* Pods-HelloWorldCuckoo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HelloWorldCuckoo.release.xcconfig"; sourceTree = "<group>"; };
+		F4C3895B27C309A1D88F844C3F4268CE /* Pods-HelloWorldCuckoo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HelloWorldCuckoo-resources.sh"; sourceTree = "<group>"; };
+		F834F869D9A962EAD0CB377F7B255201 /* VerificationProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerificationProxy.swift; path = Source/Mock/VerificationProxy.swift; sourceTree = "<group>"; };
+		FE342E24F0C3984263536004DA5D0AA2 /* StubCall.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StubCall.swift; path = Source/Stubbing/StubCall.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		742E989F7D1A21445C78A32106037007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D3FABC4185174D718754D55B9310F92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3ED7443B7B36C763E2D3E65266F474E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DD437B6B11E9F17779B0B14EC88383 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B433E89F4636ADBA42A97F82C17B3804 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2CA8827E73763C1D8BEFB7D481F866 /* Foundation.framework in Frameworks */,
+				1E0536B0DEA1982F80DDF716E000F424 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BC6E3231EA7BA1257CCFDBF444639E3 /* Cuckoo */ = {
+			isa = PBXGroup;
+			children = (
+				3D06345ACD123437463D9FEB79720F43 /* __DoNotUse.swift */,
+				06F389688A89F3DEAE8965072F977831 /* ArgumentCaptor.swift */,
+				CF6AB3EC434B9A2837765F2372CA5516 /* BaseStubFunctionTrait.swift */,
+				4F9EA755CF7ECA71F00DB6F181258A03 /* CallMatcher.swift */,
+				9A739C50817476656D44078A6FF70FAE /* CallMatcherFunctions.swift */,
+				C5B89CD95BD43483F9928F677A69B99C /* CuckooFunctions.swift */,
+				3C82F564AF1CCE30C349791FDA12ACB1 /* Matchable.swift */,
+				18C8BA2086043BCD4ABFDE06EEE0AE79 /* Mock.swift */,
+				81E9899778681CAAFC531C583DACF5BD /* MockManager.swift */,
+				BD262FCB4E5F33CC5BCF9C184C6538AC /* ParameterMatcher.swift */,
+				6625E0E80C2720ED5488A898218F73C1 /* ParameterMatcherFunctions.swift */,
+				8099251C1F1D0612E64BEFB866F0F488 /* Stub.swift */,
+				EC6523766DB78E525A5EF249A986F702 /* StubAction.swift */,
+				AE2935E1AAB9CDBFE750D11036CB3286 /* StubbingProxy.swift */,
+				FE342E24F0C3984263536004DA5D0AA2 /* StubCall.swift */,
+				7078345523E2898A57934E1CA817A8E7 /* StubFunction.swift */,
+				15D0AC4EB7E740F34306125B576FD831 /* StubFunctionThenCallRealImplementationTrait.swift */,
+				EE52B0274CA27AB91FC62D29C94D4C38 /* StubFunctionThenDoNothingTrait.swift */,
+				59F6B60811C76FFB67E196BB943B7120 /* StubFunctionThenReturnTrait.swift */,
+				27505477A8B200C46B654450436103D2 /* StubFunctionThenThrowTrait.swift */,
+				18138F475E685A506D9AE906D9B2D58E /* StubFunctionThenTrait.swift */,
+				C0AA006150EE6E8C7A8771CBDBF0B51A /* StubNoReturnFunction.swift */,
+				818C52B562E936890570C56192442E9F /* StubNoReturnThrowingFunction.swift */,
+				3190B6B3FD5450A63EE98E7FE86801C2 /* StubThrowingFunction.swift */,
+				054560CCCEAE60CF5B3070516CC0900D /* ToBeStubbedProperty.swift */,
+				C4D980032E3495E44D9FC4A1C6D3F28B /* ToBeStubbedReadOnlyProperty.swift */,
+				C6E63361C2F44651A1F30604D12D4890 /* Utils.swift */,
+				F834F869D9A962EAD0CB377F7B255201 /* VerificationProxy.swift */,
+				7CD924518105A8F8226028183AFDD782 /* VerifyProperty.swift */,
+				E0C4D169EBCCA90FF02B3C360C9FB793 /* VerifyReadOnlyProperty.swift */,
+				BCF0DC029003244C54447E3E0DBF782A /* Support Files */,
+			);
+			path = Cuckoo;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D24B2EA016AE4FABDB5AF17F3FD9C222 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74FC5448B21FF4E1AA298EEA76612BBC /* Pods-HelloWorldCuckooTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D37ADD47E25800DDD7F387F66F4D1A /* Info.plist */,
+				52DE3591F82B4B5C71E92EC91F044F79 /* Pods-HelloWorldCuckooTests.modulemap */,
+				E218F3597F6EAC30B77ACE9534F965F9 /* Pods-HelloWorldCuckooTests-acknowledgements.markdown */,
+				E5783D00FC40AA19CAE32A885DBF7C4F /* Pods-HelloWorldCuckooTests-acknowledgements.plist */,
+				B44DD418355E3674F791A530E5CE2971 /* Pods-HelloWorldCuckooTests-dummy.m */,
+				03D487FF14285CE89C500AE545A72063 /* Pods-HelloWorldCuckooTests-frameworks.sh */,
+				4DAF8DE4D447EA7AEF6E0D7A14341E22 /* Pods-HelloWorldCuckooTests-resources.sh */,
+				AE09889D69282E9BBB7171EB32AD384E /* Pods-HelloWorldCuckooTests-umbrella.h */,
+				EAA775CCEE348A46B4BCE29989A839A3 /* Pods-HelloWorldCuckooTests.debug.xcconfig */,
+				90DA94C4ACE652C128D93BB51962907F /* Pods-HelloWorldCuckooTests.release.xcconfig */,
+			);
+			name = "Pods-HelloWorldCuckooTests";
+			path = "Target Support Files/Pods-HelloWorldCuckooTests";
+			sourceTree = "<group>";
+		};
+		7A278E3A306CA6AE5ACD991AD453A246 /* Pods-HelloWorldCuckoo */ = {
+			isa = PBXGroup;
+			children = (
+				075BFA75D67F731AEBF7FCD2B584915C /* Info.plist */,
+				9587278FF58DB3104FBF3F3F872D04B6 /* Pods-HelloWorldCuckoo.modulemap */,
+				D54ABF3B3ECD1A006880949EF72FF10E /* Pods-HelloWorldCuckoo-acknowledgements.markdown */,
+				2CCC1C25CFE73CC4C3E0DA720AA92BF1 /* Pods-HelloWorldCuckoo-acknowledgements.plist */,
+				9145B7FF35D53585287F13621111E4F9 /* Pods-HelloWorldCuckoo-dummy.m */,
+				20A98E6FBE33630FF08944840D28A699 /* Pods-HelloWorldCuckoo-frameworks.sh */,
+				F4C3895B27C309A1D88F844C3F4268CE /* Pods-HelloWorldCuckoo-resources.sh */,
+				3B91465B86119C5952B5C8BED22EC2E6 /* Pods-HelloWorldCuckoo-umbrella.h */,
+				7D9BFDB7615481C1E963A616BD4B9599 /* Pods-HelloWorldCuckoo.debug.xcconfig */,
+				F0CBAE2AC4D7625ACE603A0A63BD0890 /* Pods-HelloWorldCuckoo.release.xcconfig */,
+			);
+			name = "Pods-HelloWorldCuckoo";
+			path = "Target Support Files/Pods-HelloWorldCuckoo";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E510CF8DF4094236B34D7C713E80A72D /* Pods */,
+				D4E90E1660280488DE3DB5026A26DAE3 /* Products */,
+				AE2E92E8CC7C76D60A19CCE29E70DDB4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AE2E92E8CC7C76D60A19CCE29E70DDB4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A278E3A306CA6AE5ACD991AD453A246 /* Pods-HelloWorldCuckoo */,
+				74FC5448B21FF4E1AA298EEA76612BBC /* Pods-HelloWorldCuckooTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BCF0DC029003244C54447E3E0DBF782A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED01A301F0FA94027E429509E6BFBEBF /* Cuckoo.modulemap */,
+				CAE885C70274E9523CBDAE84564D01B1 /* Cuckoo.xcconfig */,
+				8142F1F33FB4E7E14A3A406ED87620F2 /* Cuckoo-dummy.m */,
+				46D1520DA38D588B12994B61513523F9 /* Cuckoo-prefix.pch */,
+				4CEAAB38FB056BDDB485F7819E95D5A7 /* Cuckoo-umbrella.h */,
+				7F8F61AFFBA91F08A2400E2FC34FD3AF /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cuckoo";
+			sourceTree = "<group>";
+		};
+		D24B2EA016AE4FABDB5AF17F3FD9C222 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AAC405455F8E20BD0434D9D3E3D2879A /* Foundation.framework */,
+				B89BF7315BAB3516AF2A51041DC39C3B /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D4E90E1660280488DE3DB5026A26DAE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B911182DBD0481F3F43B92E235976DED /* Cuckoo.framework */,
+				BC10BF32BD018C8131C2B9699FDE3291 /* Pods_HelloWorldCuckoo.framework */,
+				9DBD8FE218E5663CF3BAC27828C0EF9A /* Pods_HelloWorldCuckooTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E510CF8DF4094236B34D7C713E80A72D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BC6E3231EA7BA1257CCFDBF444639E3 /* Cuckoo */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07071115392EF6E1DF1B31944A2456C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B67E1C26E6509645ADDD220AF99B6AAA /* Pods-HelloWorldCuckoo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		116EA5C33733CA3C6E288C2BB4346BB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6DCDFA6D6DDF7DFE1F2E5FA8C572F2 /* Cuckoo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE2B5F0CDB139B7EA3387C14264B0AD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3569A93E5F18D070D4A3085D22067FEC /* Pods-HelloWorldCuckooTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4193A0F76F45D80DB10C50C8B68B80CE /* Pods-HelloWorldCuckooTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80A8184BDDFAF0136AF66A4F16A7197A /* Build configuration list for PBXNativeTarget "Pods-HelloWorldCuckooTests" */;
+			buildPhases = (
+				604EEED118685EAB873C0B71AE2A8C72 /* Sources */,
+				A3ED7443B7B36C763E2D3E65266F474E /* Frameworks */,
+				AE2B5F0CDB139B7EA3387C14264B0AD2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB5BB8AAFC017EEE43670696E1F6BDA3 /* PBXTargetDependency */,
+			);
+			name = "Pods-HelloWorldCuckooTests";
+			productName = "Pods-HelloWorldCuckooTests";
+			productReference = 9DBD8FE218E5663CF3BAC27828C0EF9A /* Pods_HelloWorldCuckooTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		93E72F9B06DD80909AA18BA158A58D79 /* Pods-HelloWorldCuckoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BC85F9EACFF0EA432AC04C2CFA22D45 /* Build configuration list for PBXNativeTarget "Pods-HelloWorldCuckoo" */;
+			buildPhases = (
+				277F5BA0130F8C3A6DE39CA66E6B4235 /* Sources */,
+				742E989F7D1A21445C78A32106037007 /* Frameworks */,
+				07071115392EF6E1DF1B31944A2456C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HelloWorldCuckoo";
+			productName = "Pods-HelloWorldCuckoo";
+			productReference = BC10BF32BD018C8131C2B9699FDE3291 /* Pods_HelloWorldCuckoo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAA8AFC77E5ECA4D9ED2AD8579B24483 /* Cuckoo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD185025E65A1D34B5D1B89C8523E1F /* Build configuration list for PBXNativeTarget "Cuckoo" */;
+			buildPhases = (
+				3D533E3774EC4B806131543125E04CE6 /* Sources */,
+				B433E89F4636ADBA42A97F82C17B3804 /* Frameworks */,
+				116EA5C33733CA3C6E288C2BB4346BB7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cuckoo;
+			productName = Cuckoo;
+			productReference = B911182DBD0481F3F43B92E235976DED /* Cuckoo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					4193A0F76F45D80DB10C50C8B68B80CE = {
+						LastSwiftMigration = 0800;
+					};
+					DAA8AFC77E5ECA4D9ED2AD8579B24483 = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D4E90E1660280488DE3DB5026A26DAE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA8AFC77E5ECA4D9ED2AD8579B24483 /* Cuckoo */,
+				93E72F9B06DD80909AA18BA158A58D79 /* Pods-HelloWorldCuckoo */,
+				4193A0F76F45D80DB10C50C8B68B80CE /* Pods-HelloWorldCuckooTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		277F5BA0130F8C3A6DE39CA66E6B4235 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA407FD2CE82472820387B7DF0C0F6F /* Pods-HelloWorldCuckoo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D533E3774EC4B806131543125E04CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4C8B0A1C99319190481A24CB69F9FB2 /* __DoNotUse.swift in Sources */,
+				58E3B9306241224ECED6C7A22658D48F /* ArgumentCaptor.swift in Sources */,
+				1D3235D1348B7C28BE46066BFCBA2AEB /* BaseStubFunctionTrait.swift in Sources */,
+				FE9045C9DE52614F567363B0347EE41D /* CallMatcher.swift in Sources */,
+				9FBC0001CBEF89ADC56E1BE91D82E030 /* CallMatcherFunctions.swift in Sources */,
+				76FD05E33FFCF6AB0EBAE1AC7C58BD6A /* Cuckoo-dummy.m in Sources */,
+				8F99B9589C34853B2C53FDA2F29A7F84 /* CuckooFunctions.swift in Sources */,
+				07D8CCFDC9C3C8E93CAF0588CE55DC66 /* Matchable.swift in Sources */,
+				ED4694698E57EC1978E9AD6D6C162E92 /* Mock.swift in Sources */,
+				55D8D09650F341467799C7A6AA27F778 /* MockManager.swift in Sources */,
+				C58A473CE5F280DEBB10D2AC966385F3 /* ParameterMatcher.swift in Sources */,
+				C5F2AA100147D94EC2404484AE4B6FCF /* ParameterMatcherFunctions.swift in Sources */,
+				A97A6A4C71FCB1855E49A70527290859 /* Stub.swift in Sources */,
+				11142077AAD79E694451944F357B6C7E /* StubAction.swift in Sources */,
+				FCDBC434C8EDD8320BF5EF933E4C4AAB /* StubbingProxy.swift in Sources */,
+				9241B80C61A1BDF32B34D5A69E802E37 /* StubCall.swift in Sources */,
+				D29A031F514696C74AA8BABF000B289F /* StubFunction.swift in Sources */,
+				106313971E5F3D18421880AF17BBEE60 /* StubFunctionThenCallRealImplementationTrait.swift in Sources */,
+				4CDC81F9DC8DF100204F9EA36B78BCDF /* StubFunctionThenDoNothingTrait.swift in Sources */,
+				E7AA2D22EBCFD1BF1E2CC5008D23C3A0 /* StubFunctionThenReturnTrait.swift in Sources */,
+				74C8BD736BEB2526E9FCBD4F00206F98 /* StubFunctionThenThrowTrait.swift in Sources */,
+				279AEC7964BB3E51BFBB08C98D7B1F25 /* StubFunctionThenTrait.swift in Sources */,
+				9B1CB0772E1F1ED4B933908EB2218530 /* StubNoReturnFunction.swift in Sources */,
+				EE8F44682087FFF1C152A57B5BDBA0FB /* StubNoReturnThrowingFunction.swift in Sources */,
+				9BD3A64C333B4A845985EEB9133C4D88 /* StubThrowingFunction.swift in Sources */,
+				97D5D35564918A8A143F2290F8A304C2 /* ToBeStubbedProperty.swift in Sources */,
+				88658A092629E1C797F2A77E6E519B37 /* ToBeStubbedReadOnlyProperty.swift in Sources */,
+				7E924C9527DFA2DBA6101016A1A21DED /* Utils.swift in Sources */,
+				247001AB2C94EC8CDAAEF4E34723618E /* VerificationProxy.swift in Sources */,
+				4907B0E6D20F987BADACA1EE84692127 /* VerifyProperty.swift in Sources */,
+				F8F39A4D177D222D16292314C18DA0A7 /* VerifyReadOnlyProperty.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604EEED118685EAB873C0B71AE2A8C72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404EB4D4128EF9F1DBEDB5BBA23ED7A1 /* Pods-HelloWorldCuckooTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB5BB8AAFC017EEE43670696E1F6BDA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cuckoo;
+			target = DAA8AFC77E5ECA4D9ED2AD8579B24483 /* Cuckoo */;
+			targetProxy = 034D45A4E137B78C11BED2860589C112 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0FA80452BE5BC5DB10EE1FB4C6166B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE885C70274E9523CBDAE84564D01B1 /* Cuckoo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cuckoo/Cuckoo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cuckoo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cuckoo/Cuckoo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cuckoo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46EF3D4B6BD2FEC93BFCFDADE3B72C01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9BFDB7615481C1E963A616BD4B9599 /* Pods-HelloWorldCuckoo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HelloWorldCuckoo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HelloWorldCuckoo/Pods-HelloWorldCuckoo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HelloWorldCuckoo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94202AD373BE273A256A2346AF050256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DA94C4ACE652C128D93BB51962907F /* Pods-HelloWorldCuckooTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HelloWorldCuckooTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HelloWorldCuckooTests/Pods-HelloWorldCuckooTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HelloWorldCuckooTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		991F335C267CAA87253837ED7791974C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE885C70274E9523CBDAE84564D01B1 /* Cuckoo.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cuckoo/Cuckoo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cuckoo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cuckoo/Cuckoo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cuckoo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A36C49C6DEEF3FE79BE1B1CB3071F19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0CBAE2AC4D7625ACE603A0A63BD0890 /* Pods-HelloWorldCuckoo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HelloWorldCuckoo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HelloWorldCuckoo/Pods-HelloWorldCuckoo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HelloWorldCuckoo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD4C2457859B4FBBBF8A5B826F28F5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA775CCEE348A46B4BCE29989A839A3 /* Pods-HelloWorldCuckooTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HelloWorldCuckooTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HelloWorldCuckooTests/Pods-HelloWorldCuckooTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HelloWorldCuckooTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BC85F9EACFF0EA432AC04C2CFA22D45 /* Build configuration list for PBXNativeTarget "Pods-HelloWorldCuckoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EF3D4B6BD2FEC93BFCFDADE3B72C01 /* Debug */,
+				A36C49C6DEEF3FE79BE1B1CB3071F19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80A8184BDDFAF0136AF66A4F16A7197A /* Build configuration list for PBXNativeTarget "Pods-HelloWorldCuckooTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4C2457859B4FBBBF8A5B826F28F5BC /* Debug */,
+				94202AD373BE273A256A2346AF050256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD185025E65A1D34B5D1B89C8523E1F /* Build configuration list for PBXNativeTarget "Cuckoo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				991F335C267CAA87253837ED7791974C /* Debug */,
+				0FA80452BE5BC5DB10EE1FB4C6166B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

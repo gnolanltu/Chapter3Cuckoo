@@ -13,6 +13,7 @@
 		CECF8A371DB5A4B700032162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CECF8A361DB5A4B700032162 /* Assets.xcassets */; };
 		CECF8A3A1DB5A4B700032162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECF8A381DB5A4B700032162 /* LaunchScreen.storyboard */; };
 		CECF8A451DB5A4B700032162 /* HelloWorldCuckooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF8A441DB5A4B700032162 /* HelloWorldCuckooTests.swift */; };
+		CECF8A501DB5A6BE00032162 /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF8A4F1DB5A6BE00032162 /* HelloWorld.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CECF8A401DB5A4B700032162 /* HelloWorldCuckooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldCuckooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECF8A441DB5A4B700032162 /* HelloWorldCuckooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldCuckooTests.swift; sourceTree = "<group>"; };
 		CECF8A461DB5A4B700032162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECF8A4F1DB5A6BE00032162 /* HelloWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				CECF8A361DB5A4B700032162 /* Assets.xcassets */,
 				CECF8A381DB5A4B700032162 /* LaunchScreen.storyboard */,
 				CECF8A3B1DB5A4B700032162 /* Info.plist */,
+				CECF8A4F1DB5A6BE00032162 /* HelloWorld.swift */,
 			);
 			path = HelloWorldCuckoo;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECF8A321DB5A4B700032162 /* ViewController.swift in Sources */,
+				CECF8A501DB5A6BE00032162 /* HelloWorld.swift in Sources */,
 				CECF8A301DB5A4B700032162 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

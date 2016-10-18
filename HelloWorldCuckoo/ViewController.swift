@@ -11,8 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var labelText: UILabel!
+    let hw = HelloWorld()
+    
     @IBAction func updateLabel(_ sender: UIButton) {
-        labelText.text = "Hello World"
+        // labelText.text = "Hello World"
+        labelText.text = hw.message(msg: "Hello World")
     }
     override func viewDidLoad() {
         super.viewDidLoad()
